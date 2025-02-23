@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <!-- Bootstrap desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+  
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+
+    <div class="container">
+        <h1>Hoja de Vida</h1>
+
+        <!--información -->
+        <form id="form-hoja-vida">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Completo:</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <!-- Sobre ti -->
+            <div class="mb-3">
+                <label for="sobre-ti" class="form-label">Sobre ti:</label>
+                <textarea class="form-control" id="sobre-ti" required></textarea>
+            </div>
+
+            <!-- Estudios -->
+            <div class="mb-3">
+                <label for="estudios" class="form-label">Estudios:</label>
+                <select class="form-control" id="estudios" required>
+                    <option value="">Selecciona tu nivel de estudios</option>
+                    <option value="Primaria">Primaria</option>
+                    <option value="Secundaria">Secundaria</option>
+                    <option value="Bachillerato">Bachillerato</option>
+                    <option value="Universitario">Universitario</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="referencias" class="form-label">Referencias Laborales:</label>
+                <textarea class="form-control" id="referencias" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="habilidades" class="form-label">Habilidades:</label>
+                <textarea class="form-control" id="habilidades" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="foto" class="form-label">Selecciona una foto:</label>
+                <input type="file" class="form-control" id="foto" accept="image/*">
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Crear Hoja de Vida</button>
+        </form>
+
+        <!-- Contenedor de error -->
+        <div class="error-message d-none" id="error-message">
+            <p>Por favor, completa todos los campos.</p>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar la hoja de vida -->
+    <div id="myModal" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Hoja de Vida de vida <span id="nombre-result"></span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="foto-result" alt="Foto de Perfil">
+                    <p><strong>Nombre:</strong> <span id="nombre-result"></span></p>
+                    <p><strong>Sobre ti:</strong> <span id="sobre-ti-result"></span></p>
+                    <p><strong>Estudios:</strong> <span id="estudios-result"></span></p>
+                    <p><strong>Referencias Laborales:</strong> <span id="referencias-result"></span></p>
+                    <p><strong>Habilidades:</strong> <span id="habilidades-result"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="eliminar-btn"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
