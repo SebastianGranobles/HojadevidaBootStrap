@@ -5,7 +5,7 @@ document.getElementById("form-hoja-vida").addEventListener("submit", function(ev
 
     // Obtener los valores del formulario
     const nombre = document.getElementById("nombre").value;
-    const sobre Ti = document.getElementById("sobre-ti").value;
+    const sobre ti = document.getElementById("sobre-ti").value;
     const estudios = document.getElementById("estudios").value;
     const referencias = document.getElementById("referencias").value;
     const habilidades = document.getElementById("habilidades").value;
