@@ -5,14 +5,14 @@ document.getElementById("form-hoja-vida").addEventListener("submit", function(ev
 
     // Obtener los valores del formulario
     const nombre = document.getElementById("nombre").value;
-    const sobreTi = document.getElementById("sobre-ti").value;
+    const sobre Ti = document.getElementById("sobre-ti").value;
     const estudios = document.getElementById("estudios").value;
     const referencias = document.getElementById("referencias").value;
     const habilidades = document.getElementById("habilidades").value;
     const foto = document.getElementById("foto").files[0];
 
     // Validar que todos los campos estén llenos
-    if (!nombre || !sobreTi || !estudios || !referencias || !habilidades || !foto) {
+    if (!nombre || !sobre ti || !estudios || !referencias || !habilidades || !foto) {
         // Mostrar mensaje de error si hay campos vacíos
         document.getElementById("error-message").classList.remove("d-none");
         return; // Detener la ejecución si hay error
@@ -23,7 +23,7 @@ document.getElementById("form-hoja-vida").addEventListener("submit", function(ev
 
     // Actualizar la información en el modal
     document.getElementById("nombre-result").textContent = nombre;
-    document.getElementById("sobre-ti-result").textContent = sobreTi;
+    document.getElementById("sobre-ti-result").textContent = sobre ti;
     document.getElementById("estudios-result").textContent = estudios;
     document.getElementById("referencias-result").textContent = referencias;
     document.getElementById("habilidades-result").textContent = habilidades;
