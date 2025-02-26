@@ -1,44 +1,66 @@
-/* Estilos personalizados */
-.container {
-    width: 70%;
-    max-width: 500px;
-    padding: 20px;
-    background-color: #0999f2;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra horizontalmente */
-    justify-content: center; /* Centra verticalmente */
-}
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
+        /* Estilos personalizados */
+        .container {
+            display: flex;
+            justify-content: center;
+            width: 60%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        modal-body {
+            display: flex;
+            justify-content: center;
+            width: 60%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.modal-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra horizontalmente */
-    justify-content: center; /* Centra verticalmente */
-}
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-img {
-    max-width: 150px;
-    max-height: 150px;
-    display: block;
-    margin-bottom: 20px;
-}
+        .modal-content {
+            padding: 20px;
+        }
 
-.error-message {
-    color: red;
-    margin-top: 10px;
-    text-align: center;
-}
+        img {
+            display: flex;
+            max-width: 200px;
+            max-height: 200px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-/* Modal */
-.modal-dialog {
-    max-width: 500px;
-}
+        .error-message {
+            color: red;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* Modal */
+        .modal-dialog {
+            max-width: 500px;
+        }
+
+        .modal-img {
+            display: flex;
+            justify-content: center;
+            width: 60%;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .foto-result{
+            display: flex;
+            width: 450px;
+            height: 450px;
+            margin-left: auto;
+        }
